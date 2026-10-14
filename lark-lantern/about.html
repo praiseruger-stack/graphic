@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Lark & Lantern</title>
+    <meta
+      name="description"
+      content="Learn about Lark & Lantern, our values, and the thoughtful approach behind our retreats and gatherings."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Lark and Lantern home">
+          <span class="brand-mark">L</span>
+          <span class="brand-text">Lark &amp; Lantern</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html#reserve" class="nav-cta">Reserve</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container page-hero-inner">
+          <div class="page-hero-copy" data-reveal>
+            <p class="eyebrow">Our story</p>
+            <h1>We believe well-being grows in spacious, intentional communities.</h1>
+          </div>
+          <div class="page-hero-image" data-reveal>
+            <img
+              src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=900&q=80"
+              alt="A warm, welcoming meadow where a small group gathers for reflection and calm"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow text-center">
+          <p class="eyebrow center">The heart behind the work</p>
+          <h2>Built for people who are ready to slow down without losing their momentum.</h2>
+          <p>
+            Lark &amp; Lantern began with a simple question: what if our lives could feel more rooted, more restful, and more aligned with the things we truly value? We created retreats and gatherings that offer deep rest while honoring real life, honest work, and the rhythms of change.
+          </p>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container values-grid">
+          <article class="value-card" data-reveal>
+            <span class="value-number">01</span>
+            <h3>Presence over performance</h3>
+            <p>We encourage people to come as they are and give themselves permission to rest, receive, and reconnect.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <span class="value-number">02</span>
+            <h3>Gentle transformation</h3>
+            <p>Change feels more sustainable when it is rooted in supportive rituals, reflection, and compassionate practice.</p>
+          </article>
+          <article class="value-card" data-reveal>
+            <span class="value-number">03</span>
+            <h3>Community care</h3>
+            <p>We create spaces that feel emotionally safe, personally nourishing, and deeply connected to one another.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Our approach</p>
+              <h2>A rhythm of rest and renewal</h2>
+            </div>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item" data-reveal>
+              <div class="timeline-marker">1</div>
+              <div class="timeline-content">
+                <h3>Arrival &amp; settling</h3>
+                <p>We begin in a grounded way, creating space to exhale, meet one another, and arrive with intention.</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-reveal>
+              <div class="timeline-marker">2</div>
+              <div class="timeline-content">
+                <h3>Reflection &amp; practice</h3>
+                <p>Each day includes journaling, mindful movement, group conversation, and guided exercises to invite clarity.</p>
+              </div>
+            </div>
+            <div class="timeline-item" data-reveal>
+              <div class="timeline-marker">3</div>
+              <div class="timeline-content">
+                <h3>Integration &amp; return</h3>
+                <p>We leave with practical rituals and a renewed sense of direction that you can carry into daily life.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote-section alt-quote">
+        <div class="container quote-box" data-reveal>
+          <p>“The most important thing we can offer is not a perfect plan, but a place to breathe deeply enough to remember yourself.”</p>
+          <span>— Sarah, founder</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">L</span>
+            <span class="brand-text">Lark &amp; Lantern</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html#reserve">Reserve</a>
+        </div>
+        <p>© <span id="year"></span> Lark &amp; Lantern</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Lark & Lantern</title>
+    <meta
+      name="description"
+      content="Contact Lark & Lantern to reserve a retreat, ask a question, or learn more about our upcoming gatherings."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="index.html" class="brand" aria-label="Lark and Lantern home">
+          <span class="brand-mark">L</span>
+          <span class="brand-text">Lark &amp; Lantern</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-navigation" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav id="site-navigation" class="site-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active">Contact</a>
+          <a href="contact.html#reserve" class="nav-cta">Reserve</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero contact-hero">
+        <div class="container page-hero-inner">
+          <div class="page-hero-copy" data-reveal>
+            <p class="eyebrow">Let’s plan your next reset</p>
+            <h1>We’d love to help you choose the right retreat.</h1>
+          </div>
+          <div class="page-hero-image" data-reveal>
+            <img
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=900&q=80"
+              alt="A cozy retreat setting with warm textures, candles, and a welcoming atmosphere"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-wrap">
+        <div class="container contact-grid">
+          <div class="contact-card info-panel" data-reveal>
+            <p class="eyebrow">Reach out</p>
+            <h2>Questions before you book?</h2>
+            <p>
+              We’re here to answer questions about group size, lodging, pricing, and which experience best suits your season of life.
+            </p>
+
+            <div class="meta-list">
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:praiseruger@gmail.com">praiseruger@gmail.com</a>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+2348162452779">(234) 816-2452-779</a>
+              </div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a
+                  class="whatsapp-link"
+                  href="https://wa.me/2348162452779?text=Hello%20Lark%20%26%20Lantern%2C%20I%27d%20like%20to%20make%20a%20reservation%20inquiry."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Chat on WhatsApp
+                </a>
+              </div>
+              <div>
+                <strong>Location</strong>
+                <span>North Cascades, Washington</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-card contact-form" id="reserve" novalidate data-reveal>
+            <p class="eyebrow">Reserve your place</p>
+            <h2>Send a note</h2>
+
+            <div class="form-field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" />
+              <small class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" />
+              <small class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="interest">I’m interested in</label>
+              <select id="interest" name="interest">
+                <option value="">Select an experience</option>
+                <option>Autumn Reset</option>
+                <option>Mothering &amp; Meaning</option>
+                <option>Creative Renewal</option>
+                <option>Private group booking</option>
+              </select>
+              <small class="error-message" aria-live="polite"></small>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Tell us what you’re hoping for</label>
+              <textarea id="message" name="message" rows="5" placeholder="We’d love to hear from you..."></textarea>
+              <small class="error-message" aria-live="polite"></small>
+            </div>
+
+            <button class="button button-primary" type="submit">Send inquiry</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <a href="index.html" class="brand footer-brand">
+            <span class="brand-mark">L</span>
+            <span class="brand-text">Lark &amp; Lantern</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="contact.html#reserve">Reserve</a>
+        </div>
+        <p>© <span id="year"></span> Lark &amp; Lantern</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
